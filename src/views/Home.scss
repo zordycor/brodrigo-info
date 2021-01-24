@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+
+* {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+}
+
+a:visited,
+a:link,
+a:hover,
+a:active {
+	color: black;
+}
+
+
+.home {
+	margin: 0 auto;
+	max-width: 700px;
+
+	.info {
+		height: 100%;
+		margin: 40px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.first-block {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+
+		  @media (min-width: 1024px) {
+			  flex-direction: row;
+			  align-items: flex-start;
+		  }
+		}
+
+		.photo {
+			border-radius: 50%;
+			max-width: 200px;
+			margin: 0;
+
+			@media (min-width: 1024px) {
+				margin: 0 30px 30px 0;
+			}
+		}
+
+		.data {
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+		.text {
+		  	color: black;
+			margin-top: 20px;
+			width: 100%;
+		}
+
+		.name,
+		.job {
+			text-align: center;
+			margin: 0;
+
+			@media (min-width: 1024px) {
+				text-align: left;
+			}
+		}
+
+		.job {
+			font-weight: 600;
+		}
+
+		.social {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+
+			a {
+				text-decoration: none;
+			}
+		}
+
+		.fab,
+		.far {
+			font-size: 35px;
+			margin: 0 15px;
+		}
+
+		.cv {
+			width: 100%;
+			display: flex;
+			align-items: baseline;
+		}
+
+		.cv .far {
+			font-size: 18px;
+		}
+	}
+}
+
+
+
+

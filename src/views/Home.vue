@@ -51,39 +51,39 @@
 					</div>
 				</div>
 			</div>
-			<div class="experience">
-				<p class="text">
-					In 2018 I finished my Degree on CE at the UPV (
-					<a
-						:href="`${publicPath}TFG_Tapas.pdf`"
-						download="TFG Borja Rodrigo"
-					>
-						This is my final project, it's a webpage
-					</a>).
-				</p>
-				<p class="text">
-					Then, the same year, I joined Epigram Technologies, my first
-					job as a Web Developer!
-				</p>
-				<p class="text">
-					After one and a half years I joined Jeff as a Junior FE
-					Developer. We are on 2019.
-				</p>
-				<p class="text">
-					Like eight months passed and the coronavirus arrived! I got
-					fired. So in 2020 I joined Voicemod.
-				</p>
-				<p class="text">I think that's all so far.</p>
-			</div>
 			<a
-				class="cv text"
-				:href="`${publicPath}CV_Borja.pdf`"
+				class="cv"
+				href="CV_Borja.pdf"
 				download="CV Borja"
 			>
 				<p>Click here to download my CV</p>
 			</a>
+			<div class="experience">
+				<p class="text">
+					<b>2018</b> I finished my Degree on <b>Computer Engineering</b> at the UPV.
+				</p>
+				<p class="text">
+					That same year, I joined <b>Epigram Technologies</b>, my first
+					job as a Web Developer.
+				</p>
+				<p class="text">
+					In <b>2019</b> I joined <b>Jeff</b> as a Junior Frontend Developer.
+				</p>
+				<p class="text">
+					<b>2020</b>, coronavirus arrived! I got fired, so I joined <b>Voicemod</b>.
+				</p>
+				<p class="text">That's all so far!</p>
+			</div>
 			<p class="recomendations text">
-				Here should be reommendations of my colleagues. Soon...
+				Some words of my colleagues about me:
+			</p>
+			<p class="text">
+				Always with positive comments and constructive attitude towards his teammates.
+				He offers to help whenever is possible, even between teams.
+				He's in continuous learning, asking workmates and reading on his own.
+				You can see that he enjoys his job.
+				<br><br>
+				Agustin Carmona, Engineering Manager @ Voicemod.
 			</p>
 		</div>
 	</div>

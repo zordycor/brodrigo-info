@@ -9,8 +9,8 @@
 				/>
 				<div class="data">
 					<div class="title">
-						<p class="text name">Borja Rodrigo</p>
-						<p class="text job">Frontend Developer</p>
+						<h1>Borja Rodrigo</h1>
+						<h3 class="text job">Frontend Developer</h3>
 					</div>
 					<div class="social">
 					<a
@@ -26,13 +26,6 @@
 						rel="noopener noreferrer"
 					>
 						LINKEDIN
-					</a>
-					<a
-						href="https://borja-rodrigo.medium.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						MEDIUM
 					</a>
 					<a
 						href="https://www.instagram.com/zordycor/"
@@ -51,43 +44,88 @@
 					</div>
 				</div>
 			</div>
-			<a
-				class="cv"
-				href="CV_Borja.pdf"
-				download="CV Borja"
-			>
-				<p>Click here to download my CV</p>
-			</a>
-			<div class="experience">
+			<h3>What are you looking for?</h3>
+			<nav>
+				<ul>
+					<li @click="openExperience"><h4>Work Experience & Good Words</h4></li>
+					<li @click="openInvestments"><h4>Real State & Investments</h4></li>
+					<li @click="openRecommendations"><h4>Books & Tools</h4></li>
+				</ul>
+			</nav>
+			<hr>
+			<div class="container">
+			<transition name="fade">
+			<section v-if="showingElement === 'experience'">
+				<a
+					class="cv"
+					href="CV_Borja.pdf"
+					download="CV Borja"
+				>
+					<p>Click here to download my CV</p>
+				</a>
+				<div class="experience">
+					<h4>TLDR:</h4>
+					<p class="text">
+						<b>2018</b> I finished my Degree on <b>Computer Engineering</b> at the UPV.
+					</p>
+					<p class="text">
+						That same year, I joined <b>Epigram Technologies</b>, my first
+						job as a Web Developer.
+					</p>
+					<p class="text">
+						In <b>2019</b> I joined <b>Jeff</b> as a Junior Frontend Developer.
+					</p>
+					<p class="text">
+						<b>2020</b>, coronavirus arrived! I got fired, so I joined <b>Voicemod</b>.
+					</p>
+					<p class="text">That's all so far!</p>
+				</div>
+				<br>
+				<h4>Thoughts of my colleagues about me:</h4>
 				<p class="text">
-					<b>2018</b> I finished my Degree on <b>Computer Engineering</b> at the UPV.
+					Agustin Carmona, Engineering Manager @ Voicemod:
+					<br><br>
+					Always with positive comments and constructive attitude towards his teammates.
+					He offers to help whenever is possible, even between teams.
+					He's in continuous learning, asking workmates and reading on his own.
+					You can see that he enjoys his job.
 				</p>
-				<p class="text">
-					That same year, I joined <b>Epigram Technologies</b>, my first
-					job as a Web Developer.
-				</p>
-				<p class="text">
-					In <b>2019</b> I joined <b>Jeff</b> as a Junior Frontend Developer.
-				</p>
-				<p class="text">
-					<b>2020</b>, coronavirus arrived! I got fired, so I joined <b>Voicemod</b>.
-				</p>
-				<p class="text">That's all so far!</p>
+			</section>
+			</transition>
+			<transition name="fade">
+			<section class="investments" v-if="showingElement === 'investments'">
+				<h4>WHERE & HOW have I invested my money?</h4>
+				<p>- <b>ALL</b> my investments are <b>long-term</b> (+5 yrs). They are split between <b>Index Funds</b>, <b>Cryptocurrencies</b> and <b>Stocks</b>.</p>
+				<p>- The <b>largest amount</b> since 2021 is on <b><a href="https://indexacapital.com/t/OswDJF">Indexa Capital</a></b>, a platform that auto-invests on index funds for the best profit.</p>
+				<p>- I <b>bought</b> my first <b>BTCs</b> and <b>mined</b> a couple milion <b>DOGE</b> in <b>2013</b>, but I'm <b>not rich</b> for being too greedy.</p>
+				<p>- Right now, I have my BTC in <b><a href="https://blockfi.com/?ref=dc0c1262">BlockFi</a></b> where I recieve <b>interests</b> and <b><a href="https://www.coinbase.com/join/marti_0va">Coinbase</a></b> to make purchases once in a while.</p>
+				<p>- <b><a href="https://www.degiro.es/amigo-invita-amigo/empezar-a-invertir.html?id=DDC5B48B&utm_source=mgm">DEGIRO</a></b> is the platform I use for buying <b>stocks</b>. I try to get stocks from <b>companies</b> that I <b>like</b>.</p>
+			</section>
+			</transition>
 			</div>
-			<p class="recomendations text">
-				Some words of my colleagues about me:
-			</p>
-			<p class="text">
-				Always with positive comments and constructive attitude towards his teammates.
-				He offers to help whenever is possible, even between teams.
-				He's in continuous learning, asking workmates and reading on his own.
-				You can see that he enjoys his job.
-				<br><br>
-				Agustin Carmona, Engineering Manager @ Voicemod.
-			</p>
 		</div>
 	</div>
 </template>
 
-<style src="./Home.scss" lang="scss">
-</style>
+<style src="./Home.scss" lang="scss"></style>
+
+<script>
+export default {
+	data() {
+		return {
+			showingElement: '',
+		}
+	},
+	methods: {
+		openExperience() {
+			this.showingElement = 'experience';
+		},
+		openInvestments() {
+			this.showingElement = 'investments';
+		},
+		openRecommendations() {
+			this.showingElement = 'recommendations';
+		}
+	}
+}
+</script>

@@ -2,18 +2,19 @@
 
 * {
 	font-family: "Montserrat", sans-serif;
-	font-size: 15px;
 }
 
 body {
 	margin: 25px;
+	background: #222222;
+	color: white;
 }
 
 a:visited,
 a:link,
 a:hover,
 a:active {
-	color: black;
+	color: white;
 }
 
 
@@ -22,11 +23,25 @@ a:active {
 	max-width: 700px;
 
 	.info {
+		position: relative;
 		height: 100%;
 		margin: 40px 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		.container {
+			position: relative;
+		}
+
+		section {
+			position: absolute;
+		}
+
+		hr {
+			margin: 15px 0;
+			width: 30px;
+		}
 
 		.first-block {
 		  display: flex;
@@ -57,7 +72,7 @@ a:active {
 		}
 
 		.text {
-		  	color: black;
+		  	color: white;
 			margin-top: 20px;
 			width: 100%;
 		}
@@ -78,7 +93,7 @@ a:active {
 
 		.social {
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			gap: 10px;
 
 			a {
@@ -102,12 +117,33 @@ a:active {
 			font-size: 18px;
 		}
 
-		.recomendations {
+		.recommendations {
 			padding-top: 30px;
+		}
+	}
+
+	.investments {
+		ul li {
+			margin: 15px 0;
+		}
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+
+		& li {
+			cursor: pointer;
 		}
 	}
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
 
-
-
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

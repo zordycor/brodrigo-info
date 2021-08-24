@@ -30,12 +30,21 @@ a:active {
 		flex-direction: column;
 		justify-content: center;
 
+		h3 {
+			text-align: center;
+
+			@media (min-width: 1024px) {
+				text-align: left;
+			}
+		}
+
 		.container {
 			position: relative;
 		}
 
 		section {
 			position: absolute;
+			padding-bottom: 50px;
 		}
 
 		hr {
@@ -69,6 +78,14 @@ a:active {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
+
+			.title {
+				text-align: center;
+
+				@media (min-width: 1024px) {
+					text-align: left;
+				}
+			}
 		}
 
 		.text {
@@ -93,32 +110,22 @@ a:active {
 
 		.social {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			text-align: center;
 			gap: 10px;
+
+			@media (min-width: 1024px) {
+				grid-template-columns: repeat(2, 1fr);
+				text-align: left;
+			}
 
 			a {
 				text-decoration: none;
 			}
 		}
 
-		.fab,
-		.far {
-			font-size: 35px;
-			margin: 0 15px;
-		}
-
 		.cv {
-			width: 100%;
-			display: flex;
-			align-items: baseline;
-		}
-
-		.cv .far {
-			font-size: 18px;
-		}
-
-		.recommendations {
-			padding-top: 30px;
+			display: inline-block;
 		}
 	}
 
@@ -132,8 +139,29 @@ a:active {
 		list-style: none;
 		padding: 0;
 
-		& li {
+		& li h4 {
 			cursor: pointer;
+			font-weight: normal;
+
+		}
+		& li.active h4 {
+			font-weight: bold;
+		}
+	}
+	.recommendation {
+		display: inline-block;
+		margin: 0 15px 15px 0;
+		text-align: center;
+
+		@media (min-width: 1024px) {
+			margin: 0 50px 15px 0;
+		}
+
+		.item {
+			width: 100px;
+		}
+		.item-text h5 {
+			margin: 0 0 5px 0;
 		}
 	}
 }

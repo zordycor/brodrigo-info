@@ -128,7 +128,16 @@
 						</div>
 					</a>
 				</div>
-				<p>Some tools that I use daily</p>
+				<div class="recommendation">
+					<a href="https://amzn.to/3yfqz8E" target="blank">
+						<img class="item" src="../assets/monk.jpg" alt="The monk who sold his ferrari book">
+						<div class="item-text">
+							<h5>The monk who sold his ferrari</h5>
+							<h5>Robin Sharma</h5>
+						</div>
+					</a>
+				</div>
+				<h4>Some tools that I use daily</h4>
 				<div class="recommendation">
 					<a href="https://amzn.to/3gwHhKx" target="blank">
 						<img class="item" src="../assets/sony.jpg" alt="Sony headphones">

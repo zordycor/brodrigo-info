@@ -111,10 +111,19 @@
 				</div>
 				<div class="recommendation">
 					<a href="https://amzn.to/3BmDDLt" target="blank">
-						<img class="item" src="../assets/clean-coder.jpg" alt="The Clean Coder Book">
+						<img class="item" src="../assets/clean-coder.jpg" alt="The Clean Coder book">
 						<div class="item-text">
 							<h5>The Clean Coder</h5>
 							<h5>Robert C. Martin</h5>
+						</div>
+					</a>
+				</div>
+				<div class="recommendation">
+					<a href="https://amzn.to/3l4wKYk" target="blank">
+						<img class="item" src="../assets/awesome.jpg" alt="Obviously awesome book">
+						<div class="item-text">
+							<h5>Obviously awesome</h5>
+							<h5>April Dunford</h5>
 						</div>
 					</a>
 				</div>
@@ -134,6 +143,15 @@
 						<div class="item-text">
 							<h5>The monk who sold his ferrari</h5>
 							<h5>Robin Sharma</h5>
+						</div>
+					</a>
+				</div>
+				<div class="recommendation">
+					<a href="https://amzn.to/2X50agW" target="blank">
+						<img class="item" src="../assets/pig.jpg" alt="Pequeño cerdo capitalista book">
+						<div class="item-text">
+							<h5>Pequeño cerdo capitalista</h5>
+							<h5>Sofía Macías</h5>
 						</div>
 					</a>
 				</div>

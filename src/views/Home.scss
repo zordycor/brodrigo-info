@@ -88,6 +88,7 @@ a:active {
 
 		.social {
 			a {
+				position: relative;
 				margin-right: 10px;
 				text-decoration: none;
 			}
@@ -99,11 +100,13 @@ a:active {
 		padding: 0;
 
 		& li h4 {
-			cursor: pointer;
+			display: inline-block;
 			font-weight: normal;
-
+			cursor: pointer;
+			transition: font-size 200ms;
 		}
 		& li.active h4 {
+			font-size: 20px;
 			font-weight: bold;
 		}
 	}
@@ -117,4 +120,24 @@ a:active {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.link-style {
+	position: relative;
+
+	&:before {
+		bottom: -2px;
+		height: 1px;
+		left: 50%;
+		position: absolute;
+		background: #FFF;
+		width: 0;
+		content: '';
+		transform: translateX(-50%);
+		transition: width .4s cubic-bezier(.08,1.48,.69,1.14);
+	}
+
+	&:hover:before {
+		width: 100%;
+	}
 }

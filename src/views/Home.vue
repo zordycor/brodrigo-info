@@ -4,7 +4,7 @@
 			<div class="first-block">
 				<img
 					class="photo"
-					src="../assets/borja-black.png"
+					src="../assets/FOTO-BORJA-CUAD.jpg"
 					alt="This is me"
 				/>
 				<div class="data">
@@ -17,6 +17,7 @@
 						href="https://github.com/zordycor"
 						target="_blank"
 						rel="noopener noreferrer"
+						class="link-style"
 					>
 						GITHUB
 					</a>
@@ -24,19 +25,22 @@
 						href="https://www.linkedin.com/in/borja-rodrigo-marti-39a3886a/"
 						target="_blank"
 						rel="noopener noreferrer"
+						class="link-style"
 					>
 						LINKEDIN
 					</a>
 					</div>
 				</div>
 			</div>
-			<h3>What are you looking for?</h3>
 			<nav>
 				<ul>
-					<li @click="openExperience" :class="{'active': showingElement === 'experience'}"><h4>Work Experience & Good Words</h4></li>
-					<li @click="openInvestments" :class="{'active': showingElement === 'investments'}"><h4>Real State & Investments</h4></li>
-					<li @click="openRecommendations" :class="{'active': showingElement === 'recommendations'}"><h4>Books & Tools</h4></li>
-					<!-- <li @click="openFAQs" :class="{'active': showingElement === 'faqs'}"><h4>FAQs</h4></li> -->
+					<li @click="openExperience" :class="{'active': showingElement === 'experience'}">
+						<h4>Work Experience, Salaries & Good Words</h4>
+					</li>
+					<li @click="openInvestments" :class="{'active': showingElement === 'investments'}">
+						<h4>Real State & Investments</h4>
+					</li>
+					<!-- <li @click="openRecommendations" :class="{'active': showingElement === 'recommendations'}"><h4>Recommended Books & Tools</h4></li> -->
 				</ul>
 			</nav>
 			<hr>
@@ -50,9 +54,6 @@
 			<transition name="fade">
 				<RecommendationsComponent v-if="showingElement === 'recommendations'"/>
 			</transition>
-			<!-- <transition name="fade">
-				<FAQComponent v-if="showingElement === 'faqs'"/>
-			</transition> -->
 			</div>
 		</div>
 	</div>
@@ -64,14 +65,12 @@
 import ExperienceComponent from '../components/ExperienceComponent/ExperienceComponent.vue';
 import InvestmentsComponent from '../components/InvestmentsComponent/InvestmentsComponent.vue';
 import RecommendationsComponent from '../components/RecommendationsComponent/RecommendationsComponent.vue';
-// import FAQComponent from '../components/FAQComponent/FAQComponent.vue';
 
 export default {
 	components: {
 		ExperienceComponent,
 		InvestmentsComponent,
 		RecommendationsComponent,
-		// FAQComponent
 	},
 	data() {
 		return {
@@ -88,9 +87,6 @@ export default {
 		openRecommendations() {
 			this.showingElement = 'recommendations';
 		},
-		openFAQs() {
-			this.showingElement = 'faqs';
-		}
 	}
 }
 </script>

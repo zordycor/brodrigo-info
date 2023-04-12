@@ -10,26 +10,26 @@
 		<div class="experience">
 			<h4>TL;DR</h4>
 			<p class="text">
-				&#129299; On <b>2018</b>, with 27 years old, I finished my Degree on <b>Computer Engineering</b> at the UPV.
+				&#129299; On <b>2018</b>, with 27 years old, I finished my Degree on <b>Computer Engineering</b> (UPV).
 			</p>
 			<p class="text">
-				That same year, I joined <b>Epigram Technologies</b>, my first
+				👨‍💻That same year, I joined <b>Epigram Technologies</b>, my first
 				job as a Web Developer.
 				<br>
-				<sup>9k/year</sup>
+				<sub>9k/year</sub>
 			</p>
 			<p class="text">
-				In <b>2019</b> I joined <b>Jeff</b> as a Junior Frontend Developer.
+				&#128118; In <b>2019</b> I joined <b>Jeff</b> as a Junior Frontend Developer.
 				<br>
-				<sup>16k/year</sup>
+				<sub>16k/year</sub>
 			</p>
 			<p class="text">
 				&#128567; <b>2020</b>, coronavirus arrived! Company was selling retail franchises, so I got fired.
 			</p>
 			<p class="text">
-				A couple months later<b>2020</b> I joined <b>Voicemod</b> as Frontend Developer.
+				A couple months later, still in <b>2020</b>, I joined <b>Voicemod</b> as Frontend Developer.
 				<br>
-				<sup>24k/year · 28k/year · 30k/year · 35k/year · 38k/year · 43k/year</sup>
+				<sub>24k/year &rarr; 28k/year &rarr; 30k/year &rarr; 35k/year &rarr; 38k/year &rarr; 43k/year</sub>
 			</p>
 			<p class="text">That's all so far!</p>
 		</div>
